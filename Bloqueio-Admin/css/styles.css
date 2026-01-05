@@ -1,0 +1,82 @@
+/* Reset de estilos básicos */
+body, h2, p, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    border: 2px solid #1ab79d; /* Usando a cor #1ab79d para borda */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    width: 350px;
+    text-align: center;
+}
+
+.icon-title {
+    font-size: 2.5rem; /* Aumentando o tamanho do ícone */
+    margin-bottom: 20px;
+    color: #1ab79d; /* Cor do ícone */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espaçamento entre os campos */
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: left;
+    color: #333; /* Cor do texto */
+}
+
+input[type="text"], input[type="password"] {
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    border-color: #1ab79d; /* Cor de foco dos inputs */
+    outline: none;
+}
+
+button {
+    background-color: #1ab79d; /* Cor de fundo do botão */
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #17a88c; /* Cor mais escura do botão ao passar o mouse */
+}
+
+.error-message {
+    color: #e74c3c; /* Cor vermelha mais suave para a mensagem de erro */
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+

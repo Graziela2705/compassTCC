@@ -1,0 +1,83 @@
+/* Adicione isso ao seu arquivo CSS existente */
+.error {
+    color: red;
+    margin-top: 10px;
+}
+
+/* Reset básico */
+body, h2, p, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(150deg, #f8f8f8, transparent 30%), 
+                linear-gradient(330deg, rgb(222 244 255), transparent 30%), 
+                linear-gradient(225deg, #c7eef0, #d0dae0, #e2fae1, powderblue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Centralizando o container */
+.container {
+    background: #FFFFFF;
+    max-width: 360px; /* Largura máxima para centralizar */
+    width: 100%;
+    padding: 40px; /* Espaçamento interno para o conteúdo */
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(117, 159, 165, 0.5);
+    border-radius: 8px;
+}
+
+/* Estilos de ícone e título */
+.container .icon {
+    font-size: 40px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+/* Estilos do formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: left;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #adadad;
+    margin-bottom: 15px;
+    outline: none;
+}
+
+button {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 17px;
+}
+
+button:hover {
+    background-color: #333333;
+}

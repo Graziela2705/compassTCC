@@ -1,0 +1,153 @@
+/* Estilos para a página de login e cadastro */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.form-box {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 400px; /* Largura fixa para garantir tamanhos iguais */
+}
+
+.form-toggle {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.form-toggle button {
+    background: #1ab79d;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    color: rgb(255, 254, 254);
+    transition: background 0.3s;
+    flex: 1;
+}
+
+.form-toggle button:hover {
+    background: #144d4d;
+}
+
+.form-toggle button.active {
+    background:  #144d4d;
+    color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+form h2 {
+    margin-bottom: 20px;
+    color: #1ab79d;
+}
+
+form input {
+    width: calc(100% - 30px); /* 100% menos o padding da password-container */
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box; /* Adicionado para garantir que o padding não afete a largura */
+}
+
+.password-container {
+    position: relative;
+    width: 100%;
+    margin: 5px 0; /* Espaçamento inferior */
+}
+
+.password-container input {
+    width: calc(100% - 30px); /* Preenche toda a largura do contêiner menos o espaço para o ícone */
+    padding-right: 30px; /* Espaço para o ícone */
+}
+
+.toggle-password {
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+form button {
+    background: #1ab79d;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: white;
+    transition: background 0.3s;
+    width: 100%;
+    margin: 10px 0; /* Espaçamento superior e inferior */
+}
+
+form button:hover {
+    background: #144d4d;
+}
+
+
+#btnBackToHome {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #1ab79d;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* Para garantir que esteja acima do conteúdo */
+    transition: background-color 0.3s;
+}
+
+#btnBackToHome img {
+    width: 20px; /* Ajuste o tamanho do ícone conforme necessário */
+}
+
+#btnBackToHome:hover {
+    background-color:#144d4d;
+}
+
+/* Estilos para o botão de cadastro como empresa */
+#register-company-btn {
+    background: #1ab79d;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: rgb(255, 251, 251);
+    transition: background 0.3s;
+    width: 100%;
+    margin-top: 20px; /* Espaçamento superior */
+}
+
+#register-company-btn:hover {
+    background:  #144d4d;
+}
