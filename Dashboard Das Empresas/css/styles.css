@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #6a6868;
+}
+
+.dashboard-container {
+    display: flex;
+    width: 1200px;
+  margin: auto;
+}
+
+.frase {
+    text-align: center;
+    margin-top: 90px;
+    margin-bottom: 100px;
+    font-family: 'Merriweather', serif;
+}
+
+.sidebar {
+
+    width: 200px;
+    background-color: #080808; /* Mudado para branco */
+    color: #333; /* Texto escuro para contraste */
+    min-height: 100vh;
+    padding: 20px;
+    box-shadow: 2px 0 5px ;
+    border-radius: 8px;
+}
+
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 20px;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    padding: 10px 14px;
+    background-color: var(--panel-color);
+    border-right: 1px solid var(--border-color);
+    transition: var(--tran-05);
+}
+nav.close{
+    width: 73px;
+}
+
+nav .logo-image{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+nav .logo-image img{
+    width: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+ 
+
+.sidebar ul li a {
+    color: #f1eaea; /* Texto escuro para contraste */
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+
+}
+
+.sidebar ul li a2{
+    color: #333; /* Texto escuro para contraste */
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    block-size: 60px;
+
+}
+
+.sidebar ul li a:hover {
+    background-color:  #1ab79d; /* Cor de fundo laranja ao passar o mouse */
+    color: #fff; /* Texto branco ao passar o mouse */
+}
+
+.content {
+    flex: 4;
+    margin-bottom: 10px;
+    
+}
+
+
+.dashboard-text{
+    font-size: 100px;
+    font-weight: bold;
+}
+
+.icon-e-h2{
+    /*Definição de largura da div para que a frase e o logo fiquem lado a lado */
+    width: 100%;
+}
+
+.icon{
+    /*Posicionar o logo ao lado esquerdo*/
+    float: left;
+    /*Largura do logo*/
+    width: 50px;
+    /*altura do logo*/
+    height: 50px;
+    /*margem do logo*/
+    margin-right: 10px;
+}
+
+.frase{
+    /*Largura da frase para que fique ao lado do logo*/
+   width: calc(100%  - 60px);
+   /*Adicionar um pouco de margem a frase*/
+   margin-left: 10px;
+}
+
+.content h1 {
+    text-align: center;
+    color: #1ab79d;
+    margin-block-end:100px;
+    margin-top:90px;
+    margin-left:300px;
+    font-family: "Merriweather", serif;
+    
+}
+
+.content section {
+    margin-bottom: 10px;
+}
+
+.content h2 {
+    color: #333;
+    margin-block-end: 100px;
+    margin-top: 150px;
+    margin-left: 180px;
+    font-family: "Merriweather", serif;
+    text-align: center; /* Centraliza horizontalmente */
+}
+
+form {
+    position: relative;
+    right: 90px;
+    z-index: 1;
+    background: #FFFFFF;
+    width: 999px;
+    /* Alterar a altura para auto */
+    height: auto;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 89px;
+    text-align: left;
+    box-shadow: 0 0 20px 0 #1ab79d, 0 5px 5px 0 rgb(255 188 0 / 0%);
+    margin-block-start: -50px;
+    margin-left: 450px;
+}
+
+
+#perfil-form {
+    position: absolute;
+    top: 55%;
+    left: 32%;
+    transform: translate(-50%, -50%);
+    background: #FFFFFF;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Ocupar 100% do container */
+    max-width: 500px; /* Limitar a largura máxima */
+    border: 5px solid transparent; /* Define a largura da borda */
+    border-image: linear-gradient(45deg, #1ab79d, #1ab79d); /* Gradiente da borda */
+    border-image-slice: 1; /* Aplica o gradiente na borda */
+    font-family: 'Merriweather', serif;
+}
+#perfil-form h2 {
+    text-align: center; /* Centraliza o texto horizontalmente */
+    font-size: 24px; /* Ajuste o tamanho do texto, se necessário */
+    color: #333; /* Define a cor do texto */
+    margin-bottom: 20px; /* Espaçamento inferior */
+    font-family: 'Merriweather', serif; /* Garantir a fonte usada */
+}
+
+  .container {
+    position: relative;
+    z-index: 1;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  .container:before, .container:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .container .info {
+    margin: 50px auto;
+    text-align: center;
+  }
+  .container .info h1 {
+    margin: 0 0 15px;
+    padding: 0;
+    font-size: 36px;
+    font-weight: 300;
+    color: #1a1a1a;
+  }
+  .container .info span {
+    color: #4d4d4d;
+    font-size: 12px;
+  }
+  .container .info span a {
+    color: #000000;
+    text-decoration: none;
+  }
+  .container .info span .fa {
+    color: #EF3B3A;
+  }
+  body {
+    background: #c7e9f2; /* fallback for old browsers */
+    background: #c7e9f2;
+    background: #e2e1e1;
+    font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;      
+  }
+
+  
+
+label {
+    margin-bottom: 10px;
+    color: #333;
+    font-family: "Merriweather", serif;
+    font-size: 18px;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+input[type="file"] {
+    margin-bottom: 20px;
+    
+    padding: 10px;
+    border: 2px solid #991a1a;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    
+        font-family: "Roboto", sans-serif;
+        outline: 0;
+        background: #e8fdff;
+        width: 100%;
+        border: 0;
+        margin: 20px 0 15px;
+        padding: 15px;
+        box-sizing: border-box;
+        font-size: 14px;
+        box-shadow: 0 0 20px 0 #1ab79d, 0 5px 5px 0 rgb(255 188 0 / 0%);
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    padding: 10px 20px;
+    background-color:#1ab79d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1ab79d;
+}
+
+.table h2 {
+    
+
+    border-collapse: collapse;
+    margin-top: 6px;
+}
+
+table, th, td {
+   
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 20px 0 #1ab79d, 0 5px 5px 0 rgb(255 188 0 / 0%);
+    margin-right: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    margin-left: 200px;
+
+
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #1ab79d;
+    color: white;
+    font-family: "Merriweather", serif;
+}
+
+td a {
+    color: #07bbed;
+    text-decoration: none;
+    font-family: "Merriweather", serif;
+}
+
+td a:hover {
+    text-decoration: underline;
+}
+
+.hidden {
+    display: none;
+}
+td a {
+    color: #1ab79d;
+    text-decoration: none;
+}
+
+td a:hover {
+    text-decoration: underline;
+}
+
+td a[href*='excluir_conteudo.php'] {
+    color: #d9534f; /* Cor vermelha para indicar exclusão */
+}
+
+td a[href*='excluir_conteudo.php']:hover {
+    color: #c9302c; /* Cor vermelha mais escura ao passar o mouse */
+    text-decoration: underline;
+}
+
+
+
+
+#adicionar-form {
+    position: absolute;
+    top: 55%;
+    left: 32%;
+    transform: translate(-50%, -50%);
+    background: #FFFFFF;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 400px;
+    border: 5px solid transparent;
+    border-image: linear-gradient(45deg, #1ab79d, #1ab79d);
+    border-image-slice: 1;
+    font-family: 'Merriweather', serif;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#adicionar-form h2 {
+    text-align: center; /* Centraliza o título */
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    width: 100%; /* Garante que o título ocupe a largura total do formulário */
+}
+
+#adicionar-form label {
+    display: block;
+    margin: 8px 0 5px;
+    color: #333;
+}
+
+#adicionar-form input, #adicionar-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+#adicionar-form button {
+    background-color: #1ab79d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+#adicionar-form button:hover {
+    background-color: #159b77;
+}
+
+
+
+
+
+
+

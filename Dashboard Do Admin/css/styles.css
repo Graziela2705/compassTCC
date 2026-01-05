@@ -1,0 +1,193 @@
+/* Estilo do corpo e contêiner principal */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+}
+
+/* Estilo do menu lateral */
+.sidebar {
+    width: 250px; /* Largura do menu lateral */
+    background-color: #353535;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    position: fixed; /* Fixa o menu lateral */
+    height: 100%; /* Altura completa da tela */
+    top: 0; /* Topo da tela */
+    left: 0; /* Lado esquerdo da tela */
+    z-index: 1000; /* Fica acima do conteúdo */
+    overflow-y: auto; /* Permite rolagem se necessário */
+}
+
+/* Estilo do menu lateral - cabeçalho */
+.sidebar-header {
+    background-color: #000000;
+    padding: 20px;
+    text-align: center;
+}
+
+.sidebar-header h2 {
+    margin: 0;
+    font-size: 20px;
+}
+
+/* Estilo do menu lateral - menu */
+.sidebar-menu {
+    flex: 1;
+    padding-top: 20px;
+}
+
+.sidebar-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar-menu ul li {
+    padding: 15px 20px;
+    border-bottom: 1px solid #85a7b5;
+    position: relative;
+}
+
+.sidebar-menu ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    width: 20px; /* Ajuste a largura conforme necessário */
+    height: 20px; /* Ajuste a altura conforme necessário */
+    margin-right: 10px; /* Adiciona um espaço entre o ícone e o texto */
+}
+
+.sidebar-menu ul li:hover {
+    background-color: #353535;
+}
+
+.submenu, .sub-submenu {
+    display: none;
+    padding-left: 20px;
+}
+
+.menu-item:hover .submenu {
+    display: block;
+}
+
+.submenu li:hover .sub-submenu {
+    display: block;
+}
+
+/* Estilo do conteúdo principal */
+.main-content {
+    margin-left: 250px; /* Compensa a largura do menu lateral */
+    padding: 20px;
+    flex: 1;
+}
+
+.header {
+    background-color: #ffffff;
+    padding: 20px;
+    border-bottom: 1px solid #dcdcdc;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #333333;
+}
+
+.content {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para a tabela de gerenciamento de usuários */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #dcdcdc;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f9;
+}
+
+td button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+td button:hover {
+    background-color: #c0392b;
+}
+
+/* Ajusta o conteúdo principal para não sobrepor o menu lateral */
+.main-content {
+    margin-left: 250px; /* Largura do menu lateral */
+    padding: 20px;
+    overflow: hidden; /* Evita rolagem indesejada */
+}
+
+/* Adiciona os estilos para os novos formulários */
+.form-section {
+    display: none;
+    margin-top: 20px;
+}
+
+.form-section.active {
+    display: block;
+}
+
+.tabs button {
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    background-color: #f1f1f1;
+    margin-right: 5px;
+}
+
+.tabs button.active {
+    background-color: #007BFF;
+    color: white;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="file"] {
+    margin-bottom: 10px;
+}
+
+.btn-salvar {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.btn-salvar:hover {
+    background-color: #45a049;
+}
+
+
