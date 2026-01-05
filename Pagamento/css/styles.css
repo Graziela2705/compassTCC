@@ -1,0 +1,157 @@
+/* Resetando margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    height: 100vh; /* Usando toda a altura da tela */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+/* Container para centralizar conteúdo */
+.container {
+    max-width: 450px; /* Reduzir a largura do container */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; /* Bordas arredondadas */
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efeito suave de sombra e transform */
+}
+
+.container:hover {
+    transform: translateY(-5px); /* Eleva o formulário quando o mouse passa */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Aumenta a sombra ao passar o mouse */
+}
+
+/* Cabeçalho */
+.header {
+    text-align: center;
+    margin-bottom: 15px; /* Reduzir o espaço abaixo do cabeçalho */
+    color: #85a7b5; /* Cor padrão do site no cabeçalho */
+    font-size: 18px; /* Diminuir o tamanho da fonte do título */
+}
+
+/* Estilo para os detalhes do pagamento */
+.payment-details {
+    padding: 10px;
+}
+
+.payment-card {
+    background-color: #f9f9f9;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.payment-card h2 {
+    margin-bottom: 12px;
+    color: #85a7b5; /* Cor do título com a cor padrão */
+    font-size: 15px; /* Ajustar o tamanho do título dentro do cartão */
+}
+
+.payment-card .event-image {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.payment-card p {
+    margin-bottom: 6px;
+}
+
+/* Formulário de pagamento */
+.payment-form {
+    margin-top: 15px;
+}
+
+.payment-form .form-group {
+    margin-bottom: 10px;
+}
+
+.payment-form label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 4px;
+    color: #85a7b5; /* Cor padrão nos labels */
+}
+
+.payment-form input,
+.payment-form select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: border 0.3s ease, box-shadow 0.3s ease; /* Transição suave para input */
+}
+
+.payment-form input:focus,
+.payment-form select:focus {
+    border: 1px solid #85a7b5; /* Cor de borda ao focar */
+    box-shadow: 0 0 5px rgba(133, 167, 181, 0.5); /* Sombra ao focar */
+}
+
+.payment-form input:hover {
+    border: 1px solid #85a7b5; /* Muda a cor da borda ao passar o mouse */
+    box-shadow: 0 0 5px rgba(133, 167, 181, 0.5); /* Adiciona sombra ao passar o mouse */
+}
+
+.payment-form select:hover {
+    border: 1px solid #85a7b5; /* Muda a borda no hover */
+    box-shadow: 0 0 5px rgba(133, 167, 181, 0.5); /* Sombra ao passar o mouse */
+}
+
+.payment-form button {
+    background-color: #85a7b5; /* Cor padrão do site no botão */
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Efeito de transição no botão */
+}
+
+.payment-form button:hover {
+    background-color: #6f8b99; /* Cor mais escura ao passar o mouse */
+    transform: translateY(-2px); /* Levanta o botão ao passar o mouse */
+}
+
+/* Rodapé */
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #777;
+}
+
+/* Estilo para os ícones de pagamento */
+.payment-icons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.payment-icon {
+    width: 40px;
+    height: auto;
+    border-radius: 4px;
+    transition: transform 0.3s ease;
+}
+
+.payment-icon:hover {
+    transform: scale(1.1); /* Aumenta o tamanho do ícone ao passar o mouse */
+}

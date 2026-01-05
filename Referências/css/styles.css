@@ -1,0 +1,219 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e9e6e6; /* Cor de fundo da página */
+}
+
+/* ------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------- */
+/* Estilo para o mini banner */
+.mini-banner {
+    margin-top: 170px; /* Espaçamento abaixo da navbar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mini-banner img {
+    max-width: 70%; /* Ajuste conforme necessário */
+    height: auto;
+    border-radius: 20px; /* Bordas arredondadas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para o título "Etapas" */
+.etapas {
+    text-align: center;
+    margin-top: 20px; /* Espaçamento acima das etapas */
+}
+
+.etapas h2 {
+    font-size: 24px;
+    color: hsl(170, 75%, 41%); /* Cor laranja */
+}
+
+/* Estilo para a barra de pesquisa */
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Espaçamento acima da barra de pesquisa */
+    margin-bottom: 20px; /* Espaçamento abaixo da barra de pesquisa */
+}
+
+.search-bar input[type="text"] {
+    width: 500px; /* Largura do campo de pesquisa */
+    padding: 10px;
+    border: 2px solid hsl(170, 75%, 41%); /* Cor laranja */
+    border-radius: 20px 0 0 20px; /* Bordas arredondadas esquerda */
+    outline: none;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    background-color: hsl(170, 75%, 41%); /* Cor laranja */
+    color: white;
+    border: none;
+    border-radius: 0 20px 20px 0; /* Bordas arredondadas direita */
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: hsl(170, 75%, 41%); /* Cor laranja escura */
+}
+
+/* Estilo para a caixa de arquivos */
+.file-box {
+    margin: 20px auto; /* Margens para centralizar */
+    width: 80%; /* Largura da caixa de arquivos */
+    background-color: #e2e0e0; /* Fundo branco */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.file-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.file-item {
+    width: calc(25% - 20px); /* Largura das caixas - margens */
+    margin: 10px;
+    padding: 15px;
+    background-color: #f9f9f9; /* Fundo cinza claro */
+    text-align: center;
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra */
+    border: 2px solid hsl(170, 75%, 41%); /* Borda preta */
+}
+
+.file-item:hover {
+    border-color: #f5f5f5; /* Mudança de cor da borda ao passar o mouse */
+}
+
+.file-item h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333; /* Cor do título */
+    position: relative; /* Para posicionamento relativo */
+}
+
+.file-item h3::after {
+    content: '';
+    display: block;
+    width: 50px; /* Largura da linha laranja */
+    height: 3px; /* Altura da linha laranja */
+    background-color: hsl(170, 75%, 41%); /* Cor laranja */
+    position: absolute;
+    bottom: -5px; /* Posicionamento abaixo do título */
+    left: calc(50% - 25px); /* Centralizando a linha */
+}
+
+.file-item p {
+    font-size: 14px;
+    color: #666; /* Cor do texto de introdução */
+    margin-bottom: 15px;
+}
+
+.download-btn {
+    background-color:hsl(170, 75%, 41%); /* Cor laranja */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: hsl(170, 75%, 41%); /* Cor laranja escura */
+}
+
+/* Footer */
+/* CSS para ajustar o rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px; /* Adicionando margem superior */
+}
+
+.footer-column {
+    width: 20%;
+    text-align: center;
+}
+
+.footer-column h3 {
+    font-size: 24px;
+    border-bottom: 2px solid hsl(170, 75%, 41%);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.info img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.info p {
+    font-size: 16px;
+    margin: 0;
+}
+
+.footer-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; /* Centraliza verticalmente */
+    margin-top: 20px;
+}
+
+.social-icons img {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+
+/* Botão "Voltar ao Topo" */
+#btnVoltarTopo {
+    background-color: hsl(170, 75%, 41%);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 65px; /* Espaço acima do botão */
+}
+
+#btnVoltarTopo:hover {
+    background-color: #333;
+}
