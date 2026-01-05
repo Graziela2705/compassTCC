@@ -1,0 +1,335 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdf8f8; /* Cor de fundo da página */
+}
+
+
+/* ------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------- */
+
+/* Estilo para o mini banner */
+.mini-banner {
+    margin-top: 170px; /* Espaçamento abaixo da navbar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mini-banner img {
+    max-width: 70%; /* Ajuste conforme necessário */
+    height: auto;
+    border-radius: 20px; /* Bordas arredondadas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* ------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------- */
+
+/* Estilos para o título "Etapas" */
+.etapas {
+    text-align: center;
+    margin-top: 20px; /* Espaçamento acima das etapas */
+}
+
+.etapas h2 {
+    font-size: 24px;
+    color: #1ab79d; /* Cor laranja */
+}
+
+/* Estilos do carrossel */
+.carrossel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 10px;
+    overflow-x: auto; /* Adicionar overflow-x aqui */
+    scroll-behavior: smooth;
+}
+
+.carrossel-etapas {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    width: 100%;
+    justify-content: flex-start; /* Alinhar no início */
+    gap: 20px; /* Espaçamento entre as etapas */
+}
+
+.etapa {
+    flex: 0 0 calc(100% - 40px); /* Largura das etapas com espaçamento */
+    text-align: center;
+    margin: 10px;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 300px; /* Largura máxima das etapas */
+}
+
+.etapa img {
+    width: 20%;  /* Ajuste a largura para um valor maior, se necessário */
+    display: block;  /* Torna a imagem um bloco para permitir centralização */
+    margin: 0 auto;  /* Centraliza a imagem dentro do contêiner */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+
+.carrossel-prev, .carrossel-next {
+    background-color:#1ab79d;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    font-size: 18px;
+    margin: 0 5px;
+}
+
+.carrossel-prev:hover, .carrossel-next:hover {
+    background-color: hsl(170, 75%, 41%);
+}
+
+.ler-mais {
+    color: hsl(170, 75%, 41%);
+    cursor: pointer;
+}
+
+.texto-completo {
+    display: none;
+}
+
+/* ------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------- */
+
+/* Estilos para as caixas de vídeos */
+.video-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centralizar horizontalmente */
+    margin: 20px auto; /* Espaçamento vertical */
+    max-width: 1200px; /* Largura máxima para centralizar */
+}
+
+.video-box {
+    width: 25%; /* Ajustar a largura das caixinhas */
+    height: 400px; /* Ajustar a altura das caixinhas */
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px; /* Espaçamento entre as caixas */
+    padding: 20px;
+    transition: transform 0.3s;
+}
+
+.video-box img {
+    max-width: 80px; /* Limita a largura da imagem */
+    height: auto; /* Ajusta a altura proporcionalmente */
+    margin-bottom: 10px; /* Espaço abaixo da imagem */
+    display: block; /* Garante que o elemento seja tratado como bloco */
+    margin-left: auto; /* Centraliza horizontalmente */
+    margin-right: auto; /* Centraliza horizontalmente */
+}
+
+.video-box h3 {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.video-box h4 {
+    font-weight: bold;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.video-box p {
+    color: #888;
+    margin-bottom: 15px;
+}
+
+.assistir-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: hsl(170, 75%, 41%);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.assistir-btn:hover {
+    background-color: hsl(170, 75%, 41%);
+}
+
+/* Efeito de hover */
+.video-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilizando o título "Vídeos explicativos" */
+.video-title {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold; /* Negrito */
+    color: hsl(170, 75%, 41%);
+    margin-bottom: 20px;
+}
+
+
+/* ------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------- */
+
+/* Estilos para o carrossel de banners */
+.carrossel-banners {
+    position: relative;
+    margin-top: 20px;
+    overflow: hidden;
+    text-align: center; /* Centraliza os banners */
+}
+
+.banner {
+    display: inline-block; /* Mostra os banners em linha */
+    position: relative;
+    width: 60%; /* Tamanho do banner reduzido */
+    margin: 0 auto; /* Centraliza o banner horizontalmente */
+    overflow: hidden; /* Esconde o overflow para que as setas fiquem fora */
+    text-align: center; /* Centraliza o conteúdo */
+}
+
+.banner img {
+    width: 100%; /* Imagem ocupa todo o espaço do banner */
+    height: auto;
+    cursor: pointer;
+}
+
+.banner-title {
+    font-weight: bold; /* Texto em negrito */
+    color: hsl(170, 75%, 41%); /* Cor laranja */
+    margin-top: 10px; /* Espaçamento superior */
+}
+
+.fullscreen-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 1000; /* Garante que o botão de tela cheia fica sobre os banners */
+}
+
+.carrossel-prev-banner, .carrossel-next-banner {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1000; /* Garante que os botões de navegação ficam sobre os banners */
+}
+
+.carrossel-prev-banner {
+    left: 200px; /* Posicionamento ajustado mais próximo do banner */
+}
+
+.carrossel-next-banner {
+    right: 200px; /* Posicionamento ajustado mais próximo do banner */
+}
+
+/* ---------------------------------------------------------------------------------------------- 
+/* Footer */
+/* CSS para ajustar o rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px; /* Adicionando margem superior */
+}
+
+.footer-column {
+    width: 20%;
+    text-align: center;
+}
+
+.footer-column h3 {
+    font-size: 24px;
+    border-bottom: 2px solid hsl(170, 75%, 41%); ;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.info img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.info p {
+    font-size: 16px;
+    margin: 0;
+}
+
+.footer-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; /* Centraliza verticalmente */
+    margin-top: 20px;
+}
+
+.social-icons img {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+
+/* Botão "Voltar ao Topo" */
+#btnVoltarTopo {
+    background-color: hsl(170, 75%, 41%);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 65px; /* Espaço acima do botão */
+}
+
+#btnVoltarTopo:hover {
+    background-color: #333;
+}
