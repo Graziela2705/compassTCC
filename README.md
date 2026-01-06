@@ -3,7 +3,7 @@
 <h1 align="left">📖CompassTCC</h1>
 
 ###
-**`Projeto Desenvolvido por alunos da ETEC`**
+**`Projeto desenvolvido por alunos da ETEC`**
 
 <p align="left">Quer fazer sua monografia, sem complicação? Este é o CompassTCC foi pensando e criado para auxiliar os estudantes com dicas, modelos, referências e cronogramas para ajudar na organização de sua monografia.</p>
 
